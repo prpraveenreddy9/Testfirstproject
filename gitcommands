@@ -1,0 +1,29 @@
+—— GIT commands for newbie——
+
+1)git config —list ———> this command lists all parameters configured for your account
+2) git init —bare —> this will initialize a bare git repository.
+
+       When you clone any repo, it will have this git init by default
+
+—Operations after clone—
+Go to working directory, touch 1.java then 
+
+3) git status——> this shows what files are tracked(added) and untracked(not added)
+4) git add—> This command adds untracked files to git staging area
+5) git log —oneline——> this gives good info rather (git log)
+6) git shortlog——> that gives only commit message
+7)git log -1—> this gives last commit
+8) git branch——> this will state which branch you are currently in
+9) git branch —new branchname———> This creates new branch 
+—After performing above 9th step then do below
+10) git checkout —newbranchname— ——> This will checkout to newbranchname
+11) Now you are in newbranchname branch…check that by using git branch
+12) git push origin —branchnmae—
+
+Majorly, all central repositories are bare repostory and
+User repository are non-bare repository
+
+13) git show —commitid— ——> This gives complete info about that commit made
+14) echo “*.t” > .gitignore —> this will ignore *.t files 
+15) git add . ——> this will add all files
+16) git log —grep ‘first file’——> this command will grep for name first file in commits made and display that information
